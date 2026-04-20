@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badal ❤️ Payal — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+Gujarati:wght@300;400;500;600&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+  <div class="floral-bg"></div>
+
+  <div class="page">
+
+    <!-- ══ HERO ══════════════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-frame"></div>
+
+      <!-- Corner ornaments -->
+      <div class="corner tl"><svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 85 Q5 5 85 5" stroke="#C9922A" stroke-width="1.4" fill="none" />
+          <path d="M5 72 Q18 5 72 5" stroke="#C9922A" stroke-width="0.7" fill="none" opacity="0.5" />
+          <path d="M5 58 Q32 5 58 5" stroke="#C9922A" stroke-width="0.4" fill="none" opacity="0.3" />
+          <circle cx="5" cy="5" r="3.5" fill="#C9922A" opacity="0.7" />
+          <circle cx="85" cy="5" r="2" fill="#C9922A" opacity="0.4" />
+          <circle cx="5" cy="85" r="2" fill="#C9922A" opacity="0.4" />
+        </svg></div>
+      <div class="corner tr"><svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 85 Q5 5 85 5" stroke="#C9922A" stroke-width="1.4" fill="none" />
+          <path d="M5 72 Q18 5 72 5" stroke="#C9922A" stroke-width="0.7" fill="none" opacity="0.5" />
+          <path d="M5 58 Q32 5 58 5" stroke="#C9922A" stroke-width="0.4" fill="none" opacity="0.3" />
+          <circle cx="5" cy="5" r="3.5" fill="#C9922A" opacity="0.7" />
+        </svg></div>
+      <div class="corner bl"><svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 85 Q5 5 85 5" stroke="#C9922A" stroke-width="1.4" fill="none" />
+          <path d="M5 72 Q18 5 72 5" stroke="#C9922A" stroke-width="0.7" fill="none" opacity="0.5" />
+          <circle cx="5" cy="5" r="3.5" fill="#C9922A" opacity="0.7" />
+        </svg></div>
+      <div class="corner br"><svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 85 Q5 5 85 5" stroke="#C9922A" stroke-width="1.4" fill="none" />
+          <path d="M5 72 Q18 5 72 5" stroke="#C9922A" stroke-width="0.7" fill="none" opacity="0.5" />
+          <circle cx="5" cy="5" r="3.5" fill="#C9922A" opacity="0.7" />
+        </svg></div>
+
+      <div class="hero-ornament guj">
+        || શ્રી ગણેશાય નમઃ ||<br>
+        || જય માંડવી માતાજી ||
+      </div>
+
+      <div class="hero-save-date">✦ Save the Date ✦</div>
+
+      <!-- Floral SVG accent -->
+      <svg class="floral-accent" width="240" height="32" viewBox="0 0 240 32" fill="none"
+        style="opacity:0;animation:fadeUp 1s ease 0.85s forwards;">
+        <line x1="0" y1="16" x2="88" y2="16" stroke="#C9922A" stroke-width="0.8" opacity="0.5" />
+        <circle cx="120" cy="16" r="7" stroke="#C9922A" stroke-width="1" fill="rgba(201,146,42,0.12)" />
+        <circle cx="98" cy="16" r="4" stroke="#C9922A" stroke-width="0.8" fill="rgba(201,146,42,0.1)" />
+        <circle cx="142" cy="16" r="4" stroke="#C9922A" stroke-width="0.8" fill="rgba(201,146,42,0.1)" />
+        <line x1="152" y1="16" x2="240" y2="16" stroke="#C9922A" stroke-width="0.8" opacity="0.5" />
+        <path d="M113 16 Q116.5 9 120 16 Q123.5 9 127 16" stroke="#C9922A" stroke-width="0.9" fill="none" />
+      </svg>
+
+      <h1 class="hero-couple">
+        <em>Badal</em>
+        <span class="hero-heart">❤️</span>
+        <em>Payal</em>
+      </h1>
+
+      <p class="hero-script">Together Forever</p>
+      <p class="hero-date">શનિવાર · ૦૯-૦૫-૨૦૨૬ · Velan</p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown">
+        <div class="cd-unit">
+          <span class="cd-num" id="cd-days">00</span>
+          <span class="cd-label">Days</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit">
+          <span class="cd-num" id="cd-hours">00</span>
+          <span class="cd-label">Hours</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit">
+          <span class="cd-num" id="cd-mins">00</span>
+          <span class="cd-label">Mins</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit">
+          <span class="cd-num" id="cd-secs">00</span>
+          <span class="cd-label">Secs</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <div class="shimmer-line"></div>
+
+    <!-- ══ INVOCATION ═══════════════════════════════════════════ -->
+    <section class="reveal">
+      <div class="invocation-card">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+          style="margin-bottom:1rem;opacity:0.75;position:relative;z-index:1;">
+          <circle cx="26" cy="26" r="23" stroke="#C9922A" stroke-width="0.8" fill="rgba(201,146,42,0.06)" />
+          <path d="M26 9 L29.5 19.5 L40.5 19.5 L31.5 25.5 L35 36 L26 30 L17 36 L20.5 25.5 L11.5 19.5 L22.5 19.5 Z"
+            fill="rgba(201,146,42,0.28)" stroke="#C9922A" stroke-width="0.7" />
+        </svg>
+        <div class="invocation-text">
+          || શ્રી ગણેશાય નમઃ ||<br>
+          || જય માંડવી માતાજી ||
+        </div>
+        <p class="invocation-sub">✦ With Blessings of the Divine ✦</p>
+      </div>
+    </section>
+
+    <!-- ══ THE INVITATION ════════════════════════════════════════ -->
+    <section class="reveal">
+      <p class="section-label">✦ The Invitation ✦</p>
+      <h2 class="section-title">With Joy in Our <em>Hearts</em></h2>
+      <div class="divider-line"></div>
+
+      <p class="poem">
+        Two souls, two families, one eternal union —<br>
+        beneath the canopy of love and ancient blessings,<br>
+        we invite you to witness the sacred joining<br>
+        of <em style="color:var(--gold)">Badal</em> and <em style="color:var(--gold)">Payal</em>,<br>
+        as their journey of forever begins.
+      </p>
+
+      <!-- Main Invitation Card -->
+      <div class="invitation-main">
+        <!-- Inner corner ornaments -->
+        <div class="inv-corner tl"><svg viewBox="0 0 72 72" fill="none">
+            <path d="M4 68 Q4 4 68 4" stroke="#C9922A" stroke-width="1.2" fill="none" />
+            <path d="M4 55 Q17 4 55 4" stroke="#C9922A" stroke-width="0.6" fill="none" opacity="0.5" />
+            <circle cx="4" cy="4" r="3" fill="#C9922A" opacity="0.6" />
+          </svg></div>
+        <div class="inv-corner tr"><svg viewBox="0 0 72 72" fill="none">
+            <path d="M4 68 Q4 4 68 4" stroke="#C9922A" stroke-width="1.2" fill="none" />
+            <path d="M4 55 Q17 4 55 4" stroke="#C9922A" stroke-width="0.6" fill="none" opacity="0.5" />
+            <circle cx="4" cy="4" r="3" fill="#C9922A" opacity="0.6" />
+          </svg></div>
+        <div class="inv-corner bl"><svg viewBox="0 0 72 72" fill="none">
+            <path d="M4 68 Q4 4 68 4" stroke="#C9922A" stroke-width="1.2" fill="none" />
+            <path d="M4 55 Q17 4 55 4" stroke="#C9922A" stroke-width="0.6" fill="none" opacity="0.5" />
+            <circle cx="4" cy="4" r="3" fill="#C9922A" opacity="0.6" />
+          </svg></div>
+        <div class="inv-corner br"><svg viewBox="0 0 72 72" fill="none">
+            <path d="M4 68 Q4 4 68 4" stroke="#C9922A" stroke-width="1.2" fill="none" />
+            <path d="M4 55 Q17 4 55 4" stroke="#C9922A" stroke-width="0.6" fill="none" opacity="0.5" />
+            <circle cx="4" cy="4" r="3" fill="#C9922A" opacity="0.6" />
+          </svg></div>
+
+        <div class="invite-guj guj">
+
+          <!-- Groom's Family -->
+          <div class="family-block">
+            <strong>વેલણ નિવાસી</strong><br>
+            <span class="gold-name">મંજુલાબેન તથા શ્રી દિલીપભાઈ પોપટલાલ બાંભણીયા</span><br>
+            ના પ્રિય સુપુત્ર<br>
+            <span class="big-name">ચિ. બાદલ</span>
+          </div>
+
+          <div class="invite-sep">✦ સાથે ✦</div>
+
+          <!-- Bride's Family -->
+          <div class="family-block">
+            <strong>દામલી નિવાસી</strong><br>
+            <span class="gold-name">મોતીબેન તથા શ્રી બાલુભાઈ રૂડાભાઈ સોલંકી</span><br>
+            ની પ્રિય સુપુત્રી<br>
+            <span class="big-name">ચિ. પાયલ</span>
+          </div>
+
+          <div class="invite-sep">✦</div>
+
+          ના <em style="color:var(--gold);font-style:italic;">શુભ વિવાહ — લગ્ન માંગલ્ય</em> નિમિત્તે<br>
+          આપ સૌ સ્વજનોને સહ-પરિવાર<br>
+          <strong>લગ્નગ્રંથિ</strong>માં સાદર આમંત્રણ છે.
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══ TIMELINE ═══════════════════════════════════════════════ -->
+    <section class="reveal">
+      <p class="section-label">✦ Celebrations ✦</p>
+      <h2 class="section-title">Sacred <em>Moments</em></h2>
+      <div class="divider-line"></div>
+
+      <div class="timeline">
+
+        <div class="tl-day">
+          <span class="tl-day-badge">શુક્રવાર · ૦૮-૦૫-૨૦૨૬</span>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-time">Auspicious Morning</div>
+            <div class="tl-event">Mandap Muhurat</div>
+            <div class="tl-sub guj">મંડપ મુહૂર્ત</div>
+          </div>
+          <div style="width:calc(50% - 2rem)"></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div style="width:calc(50% - 2rem)"></div>
+          <div class="tl-card">
+            <div class="tl-time">12:30 PM onwards</div>
+            <div class="tl-event">Bhojan Samarambh</div>
+            <div class="tl-sub guj">ભોજન સમારંભ</div>
+          </div>
+        </div>
+
+        <div class="tl-day" style="margin-top:2.5rem;">
+          <span class="tl-day-badge">શનિવાર · ૦૯-૦૫-૨૦૨૬</span>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-time">Morning Procession</div>
+            <div class="tl-event">Jaan Prasthan</div>
+            <div class="tl-sub guj">જાન પ્રસ્થાન</div>
+          </div>
+          <div style="width:calc(50% - 2rem)"></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div style="width:calc(50% - 2rem)"></div>
+          <div class="tl-card">
+            <div class="tl-time">Auspicious Morning Hours</div>
+            <div class="tl-event">Hast Melap</div>
+            <div class="tl-sub guj">હસ્ત મેળાપ — શુભ વિવાહ</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="shimmer-line"></div>
+
+    <!-- ══ VENUE ══════════════════════════════════════════════════ -->
+    <section class="reveal">
+      <p class="section-label">✦ Where to Find Us ✦</p>
+      <h2 class="section-title">The <em>Venue</em></h2>
+      <div class="divider-line"></div>
+
+      <div class="venue-card">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" style="margin-bottom:1rem;opacity:0.65;">
+          <circle cx="21" cy="18" r="7.5" stroke="#C9922A" stroke-width="1.2" fill="rgba(201,146,42,0.1)" />
+          <path d="M21 39 C21 39 8 27 8 18 C8 10.82 13.82 5 21 5 C28.18 5 34 10.82 34 18 C34 27 21 39 21 39Z"
+            stroke="#C9922A" stroke-width="1.2" fill="rgba(201,146,42,0.08)" />
+          <circle cx="21" cy="18" r="3.5" fill="#C9922A" opacity="0.65" />
+        </svg>
+
+        <div class="venue-name">ગોંદરા ચોક</div>
+        <p class="venue-detail">
+          મુ. વેલણ, તા. કોડીનાર<br>
+          જી. ગીર સોમનાથ<br>
+          <span style="font-size:0.88rem;color:var(--text-soft);">Gondra Chowk, Velan, Ta. Kodinar, Gir Somnath</span>
+        </p>
+
+        <!-- Actions: Map button + QR Code -->
+        <div class="venue-actions">
+
+          <!-- Google Maps Button -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:0.8rem;">
+            <a class="map-btn" href="https://maps.app.goo.gl/u1Bn2j3Dra27DRfL7" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              View on Google Maps
+            </a>
+            <span style="font-size:0.72rem;color:var(--text-soft);letter-spacing:0.1em;">Tap to open directions</span>
+          </div>
+
+          <!-- QR Code -->
+          <div class="qr-wrapper">
+            <div class="qr-box">
+              <div id="qrcode"></div>
+            </div>
+            <span class="qr-label">📍 Scan for Location</span>
+            <span class="qr-sublabel">Opens Google Maps</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══ CLOSING POEM ═══════════════════════════════════════════ -->
+    <section class="reveal">
+      <p class="section-label">✦ A Message from the Little Ones ✦</p>
+      <h2 class="section-title">With Love &amp; <em>Longing</em></h2>
+      <div class="divider-line"></div>
+
+      <div class="closing-card">
+        <svg width="60" height="40" viewBox="0 0 60 40" fill="none" style="margin-bottom:1.5rem;opacity:0.5;">
+          <path d="M5 35 Q10 5 30 5 Q50 5 55 35" stroke="#E87070" stroke-width="0.8" fill="none" />
+          <path d="M30 5 L30 35" stroke="#C9922A" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.5" />
+          <circle cx="30" cy="5" r="4" fill="rgba(232,112,112,0.25)" stroke="#E87070" stroke-width="0.8" />
+        </svg>
+
+        <div class="closing-poem guj">
+          આપ પધારશો અમારા <strong>કાકા</strong> તથા <strong>મામા</strong>ના લગ્નમાં<br>
+          તો હૈયુ હરખાઈ જશે..
+        </div>
+
+        <div class="closing-sign">
+          — Badal &amp; Payal's Little Ones 🌸
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FINAL BLESSINGS ════════════════════════════════════════ -->
+    <section class="reveal" style="padding-top:1rem;padding-bottom:3rem;">
+      <div style="text-align:center;">
+        <svg width="200" height="50" viewBox="0 0 200 50" fill="none"
+          style="margin:0 auto 1.5rem;display:block;opacity:0.45;">
+          <line x1="0" y1="25" x2="70" y2="25" stroke="#C9922A" stroke-width="0.8" />
+          <path d="M75 25 Q82 12 89 25 Q96 38 103 25 Q110 12 117 25 Q124 38 131 25" stroke="#C9922A" stroke-width="0.8"
+            fill="none" />
+          <line x1="136" y1="25" x2="200" y2="25" stroke="#C9922A" stroke-width="0.8" />
+          <circle cx="100" cy="25" r="4" fill="rgba(201,146,42,0.2)" stroke="#C9922A" stroke-width="0.8" />
+        </svg>
+
+        <p class="hero-couple" style="font-size:clamp(2rem,8vw,5rem);opacity:1;animation:none;">
+          <em>Badal</em>
+          <span style="-webkit-text-fill-color:#E87070;font-style:normal;">❤️</span>
+          <em>Payal</em>
+        </p>
+
+        <p
+          style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--text-soft);margin-top:0.8rem;font-size:1.1rem;letter-spacing:0.05em;">
+          May 9th, 2026 · Velan, Gir Somnath
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+    <footer>
+      <div class="guj" style="font-size:1rem;color:var(--gold);margin-bottom:0.5rem;">
+        ॥ ઈશ્વર આ લગ્ન-બંધનને ચિરંજીવ રાખે ॥
+      </div>
+      Made with ❤️ for Badal &amp; Payal's Wedding · 09-05-2026
+    </footer>
+
+  </div><!-- .page -->
+
+  <script>
+    // ── QR Code Generation ────────────────────────────────────────
+    new QRCode(document.getElementById('qrcode'), {
+      text: 'https://maps.app.goo.gl/u1Bn2j3Dra27DRfL7',
+      width: 140,
+      height: 140,
+      colorDark: '#5C3D2E',
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.H
+    });
+
+    // ── Countdown Timer ───────────────────────────────────────────
+    const weddingDate = new Date('2026-05-09T08:00:00');
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = weddingDate - now;
+
+      if (diff <= 0) {
+        document.querySelector('.countdown').innerHTML =
+          '<span style="font-family:\'Cormorant Garamond\',serif;font-size:1.4rem;color:var(--gold);letter-spacing:0.1em;">🎉 The Big Day is Here!</span>';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ── Floating Petals ───────────────────────────────────────────
+    const petalColors = ['#F0A8B8', '#F5C9A8', '#E8C070', '#F5D890', '#FADADD'];
+    const petalSVGs = [
+      '<svg viewBox="0 0 20 24" width="18" height="22"><path d="M10 2 C6 2 1 8 1 14 C1 19 5 22 10 22 C15 22 19 19 19 14 C19 8 14 2 10 2Z" fill="COLOR" opacity="0.75"/></svg>',
+      '<svg viewBox="0 0 20 20" width="16" height="16"><ellipse cx="10" cy="10" rx="7" ry="9" fill="COLOR" opacity="0.65"/></svg>',
+      '<svg viewBox="0 0 14 26" width="12" height="22"><path d="M7 1 C3 7 2 14 7 25 C12 14 11 7 7 1Z" fill="COLOR" opacity="0.7"/></svg>',
+    ];
+
+    function spawnPetal() {
+      const el = document.createElement('div');
+      el.className = 'petal';
+      const svg = petalSVGs[Math.floor(Math.random() * petalSVGs.length)];
+      const color = petalColors[Math.floor(Math.random() * petalColors.length)];
+      el.innerHTML = svg.replace('COLOR', color);
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.top = '-40px';
+      const dur = 8 + Math.random() * 10;
+      el.style.animationDuration = dur + 's';
+      el.style.animationDelay = Math.random() * 4 + 's';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), (dur + 5) * 1000);
+    }
+
+    setInterval(spawnPetal, 600);
+    for (let i = 0; i < 6; i++) setTimeout(spawnPetal, i * 200);
+
+    // ── Scroll Reveal ─────────────────────────────────────────────
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          e.target.querySelectorAll('.tl-card').forEach((item, i) => {
+            item.style.transitionDelay = (i * 0.12) + 's';
+          });
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>
